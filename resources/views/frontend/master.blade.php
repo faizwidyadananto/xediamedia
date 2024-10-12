@@ -21,7 +21,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
   <title>XediaMedia</title>
 
   <!-- bootstrap core css -->
@@ -59,7 +59,7 @@
                 Location, No B07
               </span>
             </a>
-            <a href="https://wa.me/6281947600907" target="_blank">
+            <a href="https://wa.me/6282328713200" target="_blank">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
                 Whatsapp : +62 819-4760-0907
@@ -83,9 +83,15 @@
         </div>
       </div>
       <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand " href=""> XediaMedia </a>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container ">
+      <a class="navbar-brand" href="">
+        <div class="logo-container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+</div>
+        XediaMedia
+      </a>
+
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> </span>
@@ -104,9 +110,6 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="{{ url('#layanan') }}">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="{{ url('#contact') }}">Contact Us</a>
                 </li>
                 <form class="form-inline justify-content-center">
                 </form>
@@ -138,7 +141,7 @@
                     You can contact us directly via WhatsApp by clicking the button below
                     </p>
                     <div class="btn-box">
-                      <a href="https://wa.me/6281947600907" class="btn1">
+                      <a href="https://wa.me/6282328713200" class="btn1">
                         Whatsapp
                       </a>
                     </div>
@@ -405,61 +408,6 @@
 
   <!-- end client section -->
 
-  <!-- contact section -->
-  <section class="contact_section" id='contact'>
-    <div class="container-fluid">
-
-      <div class="row">
-        <div class="col-md-6 px-0">
-          <div class="img-box ">
-            <img src="images/All.svg" class="box_img" alt="about img">
-          </div>
-        </div>
-        <div class="col-md-5 mx-auto">
-          <div class="form_container">
-            <div class="heading_container heading_center">
-              <h2>Get In Touch</h2>
-            </div>
-            <form action="">
-              <div class="form-row">
-                <div class="form-group col">
-                  <input type="text" class="form-control" placeholder="Your Name" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-lg-6">
-                  <input type="text" class="form-control" placeholder="Phone Number" />
-                </div>
-                <div class="form-group col-lg-6">
-                  <select name="" id="" class="form-control wide">
-                    <option value="">Select Service</option>
-                    <option value="">Tiktok Ads</option>
-                    <option value="">Instagram Ads</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col">
-                  <input type="email" class="form-control" placeholder="Email" />
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col">
-                  <input type="text" class="message-box form-control" placeholder="Message" />
-                </div>
-              </div>
-              <div class="btn_box">
-                <button>
-                  SEND
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end contact section -->
 
 
   <!-- info section -->
@@ -529,22 +477,22 @@
               </h5>
               <ul class="info_menu">
                 <li>
-                  <a href="index.html">
+                  <a href="{{ url('#home') }}">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="about.html">
+                  <a href="{{ url('#about') }}">
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="service.html">
+                  <a href="{{ url('#services') }}">
                     Services
                   </a>
                 </li>
                 <li class="mb-0">
-                  <a href="contact.html">
+                  <a href="{{ url('#contact') }}">
                     Contact Us
                   </a>
                 </li>
@@ -568,6 +516,12 @@
     </div>
   </footer>
   <!-- footer section -->
+  <a href="https://wa.me/6282328713200" class="floating-whatsapp" target="_blank">
+  <i class="fa fa-whatsapp"></i>
+  <span>
+  Contact Us
+  </span>
+</a>
 
   <!-- jQery -->
   <script src="{{URL ::to ('frontend/js/jquery-3.4.1.min.js')}}"></script>

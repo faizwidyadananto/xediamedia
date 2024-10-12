@@ -106,6 +106,7 @@ a:focus {
   min-height: 100%;
 }
 
+
 .hero_area .hero_bg_box::before {
   content: "";
   position: absolute;
@@ -226,7 +227,7 @@ a:focus {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: #159ec063;
+  background-color: #071f2463;
   transition: background-color 0.3s ease, color 0.3s ease; 
 }
 .navbar.transparent {
@@ -235,7 +236,7 @@ a:focus {
 }
 
 .navbar.solid {
-  background-color: #000; /* Atur sesuai kebutuhan */
+  background-color: #3a728d; /* Atur sesuai kebutuhan */
   color: #ffffff;
 }
 
@@ -248,6 +249,23 @@ a:focus {
   color: #ffffff;
   font-weight: bold;
   font-size: 36px;
+  display: flex;
+  align-items: center;
+}
+.logo-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
 }
 
 .navbar-brand span {
@@ -282,7 +300,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  color: #2c7873;
+  color: #205a89;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -621,6 +639,8 @@ a:focus {
 
 .about_section .img-box img {
   width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 
 .about_section .detail-box p {
@@ -764,7 +784,8 @@ a:focus {
 }
 
 .contact_section .img-box img {
-  min-width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .client_section .client_container {
@@ -878,6 +899,7 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 10px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -921,6 +943,7 @@ a:focus {
 }
 
 .info_section .info_menu {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,6 +988,7 @@ a:focus {
 .info_section .info_form button:hover {
   background-color: transparent;
   color: #2c7873;
+  width: 100%;
 }
 
 /* footer section*/
@@ -972,6 +996,9 @@ a:focus {
   position: relative;
   background-color: #ffffff;
   text-align: center;
+  width: 100%;
+  padding: 15px;
+  flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -991,5 +1018,32 @@ a:focus {
 
 .footer_section p a {
   color: inherit;
+}
+.floating-whatsapp {
+  position: fixed;
+  width: auto; /* Ganti dari 50px ke auto agar ukuran dapat disesuaikan dengan konten */
+  height: 50px; /* Pastikan tinggi tetap sama */
+  bottom: 50px; /* Jarak dari bawah layar */
+  right: 20px; /* Jarak dari kanan layar */
+  background-color: #25D366; /* Warna hijau WhatsApp */
+  color: #fff;
+  border-radius: 25px; /* Membuat tombol bulat dengan radius setengah dari tinggi */
+  text-align: center;
+  font-size: 20px; /* Sesuaikan ukuran font */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  z-index: 1000; /* Agar selalu di atas elemen lain */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Tambahkan padding untuk ruang di dalam tombol */
+  transition: background-color 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+  background-color: #128C7E; /* Warna saat tombol di-hover */
+}
+.floating-whatsapp span {
+  margin-left: 5px; /* Jarak antara ikon dan teks */
+  white-space: nowrap; /* Agar teks tidak terputus */
 }
 /*# sourceMappingURL=style.css.map */
